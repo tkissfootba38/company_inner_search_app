@@ -10,3 +10,4 @@ tiktoken
 pandas
 numpy
 langchain-openai
+langchain-community
