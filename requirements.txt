@@ -1,0 +1,11 @@
+streamlit
+python-dotenv
+openai
+langchain
+chromadb
+faiss-cpu
+pymupdf
+docx2txt==0.8
+tiktoken
+pandas
+numpy
