@@ -12,3 +12,6 @@ numpy
 langchain-openai
 langchain-community
 python-docx
+beautifulsoup4==4.12.3
+ModuleNotFoundError: No module named 'bs4'
+beautifulsoup4==4.12.3
