@@ -15,6 +15,16 @@ import streamlit as st
 import utils
 # （自作）アプリ起動時に実行される初期化処理が記述された関数
 from initialize import initialize
+# --- 初期化で落ちたときにエラーを画面に表示する ---
+import traceback
+
+try:
+    initialize()   # ← もともと呼んでいた処理
+except Exception:
+    st.error("初期化でエラーが発生しました。下に原因を表示します（Logs も参照可）。")
+    st.code(traceback.format_exc())
+    st.stop()
+
 # （自作）画面表示系の関数が定義されているモジュール
 import components as cn
 # （自作）変数（定数）がまとめて定義・管理されているモジュール
